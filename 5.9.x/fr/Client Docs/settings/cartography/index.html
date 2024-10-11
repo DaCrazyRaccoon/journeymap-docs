@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cartography-settings" class="md-skip">
+        <a href="#parametres-de-cartographie" class="md-skip">
           Aller au contenu
         </a>
       
@@ -758,8 +758,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -788,8 +786,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -798,18 +794,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#parametres-de-cartographie" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Paramètres de Cartographie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#bascules" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Settings
+      Bascules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autres-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres Paramètres
     </span>
   </a>
   
@@ -1572,8 +1577,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1582,18 +1585,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#parametres-de-cartographie" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Paramètres de Cartographie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#bascules" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Settings
+      Bascules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autres-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres Paramètres
     </span>
   </a>
   
@@ -1617,123 +1629,125 @@
   
 
 
-<h1 id="cartography-settings"><strong>Cartography Settings</strong></h1>
-<p>The cartography settings allow you to customize how the map is rendered, and what is shown on it.</p>
-<p><a class="glightbox" href="../../../../img/settings/client/cartography.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Cartography-Settings" class="center" src="../../../../img/settings/client/cartography.png" /></a></p>
-<h2 id="toggles"><strong>Toggles</strong></h2>
-<p>The <strong>bold</strong> toggle settings below are enabled by default.</p>
+  <h1>Cartographie</h1>
+
+<h2 id="parametres-de-cartographie"><strong>Paramètres de Cartographie</strong></h2>
+<p>Les paramètres de cartographie vous permettent de personnaliser la façon dont la carte est rendue et ce qui est affiché dessus.</p>
+<p><a class="glightbox" href="../../../img/settings/client/cartography.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Paramètres de Cartographie" class="center" src="../../../img/settings/client/cartography.png" /></a></p>
+<h2 id="bascules"><strong>Bascules</strong></h2>
+<p>Les paramètres de bascule <strong>en gras</strong> ci-dessous sont activés par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
+<th>Bascule</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Always Map Caves</td>
-<td>Whether to map caves below you when you’re on the surface</td>
+<td>Cartographier Toujours les Grottes</td>
+<td>Que les grottes sous vous soient cartographiées lorsque vous êtes à la surface</td>
 </tr>
 <tr>
-<td>Always Map Surface</td>
-<td>Whether to map the surface above you when you’re in caves</td>
+<td>Cartographier Toujours la Surface</td>
+<td>Que la surface au-dessus de vous soit cartographiée lorsque vous êtes dans des grottes</td>
 </tr>
 <tr>
-<td><strong>Blend Foliage</strong></td>
-<td>Whether to apply biome colours to foliage</td>
+<td><strong>Mélanger le Feuillage</strong></td>
+<td>Que les couleurs des biomes soient appliquées au feuillage</td>
 </tr>
 <tr>
-<td><strong>Blend Grass</strong></td>
-<td>Whether to apply biome colours to grass</td>
+<td><strong>Mélanger l'Herbe</strong></td>
+<td>Que les couleurs des biomes soient appliquées à l'herbe</td>
 </tr>
 <tr>
-<td>Blend Water</td>
-<td>Whether to apply biome colours to water</td>
+<td>Mélanger l'Eau</td>
+<td>Que les couleurs des biomes soient appliquées à l'eau</td>
 </tr>
 <tr>
-<td>Clear Unlit Caves</td>
-<td>Unlit and inner slice blocks are rendered clear instead of black. This option only effects newly mapped blocks.</td>
+<td>Effacer les Grottes Non Éclairées</td>
+<td>Les blocs non éclairés et de tranche intérieure sont rendus transparents au lieu de noirs. Cette option affecte seulement les blocs nouvellement cartographiés.</td>
 </tr>
 <tr>
-<td><strong>Ignore Glass Ceilings</strong></td>
-<td>Whether to remain in surface mode when under a glass ceiling</td>
+<td><strong>Ignorer les Plafonds en Verre</strong></td>
+<td>Rester en mode surface même sous un plafond en verre</td>
 </tr>
 <tr>
-<td><strong>Map Biomes</strong></td>
-<td>Whether to show biome colours on the map</td>
+<td><strong>Cartographier les Biomes</strong></td>
+<td>Montrer les couleurs des biomes sur la carte</td>
 </tr>
 <tr>
-<td><strong>Map Topography</strong></td>
-<td>Whether to generate a contour map that shows elevation</td>
+<td><strong>Cartographier la Topographie</strong></td>
+<td>Générer une carte de contour montrant l'élévation</td>
 </tr>
 <tr>
-<td>Show Bathymetry</td>
-<td>Whether to show underwater terrain on the map</td>
+<td>Montrer la Bathymétrie</td>
+<td>Montrer le terrain sous-marin sur la carte</td>
 </tr>
 <tr>
-<td><strong>Show Crops</strong></td>
-<td>Whether to show crops on the map</td>
+<td><strong>Montrer les Cultures</strong></td>
+<td>Montrer les cultures sur la carte</td>
 </tr>
 <tr>
-<td>Show Plant Shadows</td>
-<td>Whether to plants and crops should cast shadows on the map</td>
+<td>Montrer les Ombres des Plantes</td>
+<td>Que les plantes et cultures projettent des ombres sur la carte</td>
 </tr>
 <tr>
-<td>Show Plants</td>
-<td>Whether to show plants on the map</td>
+<td>Montrer les Plantes</td>
+<td>Montrer les plantes sur la carte</td>
 </tr>
 <tr>
-<td><strong>Show Surface Above Caves</strong></td>
-<td>Whether to show a dimmed view of the surface when in cave mode</td>
+<td><strong>Montrer la Surface au-dessus des Grottes</strong></td>
+<td>Montrer une vue atténuée de la surface en mode grotte</td>
 </tr>
 <tr>
-<td>Show Water Biome Colours</td>
-<td>Whether to show water colours based on biomes</td>
+<td>Montrer les Couleurs de l'Eau des Biomes</td>
+<td>Montrer les couleurs de l'eau basées sur les biomes</td>
 </tr>
 <tr>
-<td><strong>Use Antialiasing</strong></td>
-<td>Whether to use anti-aliasing to improve the shading effect used to show elevation</td>
+<td><strong>Utiliser l'Anticrénelage</strong></td>
+<td>Utiliser l'anticrénelage pour améliorer l'effet d'ombrage utilisé pour montrer l'élévation</td>
 </tr>
 <tr>
-<td><strong>Use Cave Lighting</strong></td>
-<td>Whether to show lights underground - disable for a fully bright map</td>
+<td><strong>Utiliser l'Éclairage des Grottes</strong></td>
+<td>Montrer les lumières souterraines - désactiver pour une carte entièrement éclairée</td>
 </tr>
 <tr>
-<td><strong>Use Transparency</strong></td>
-<td>Whether transparent blocks should reveal what’s below them on the map</td>
+<td><strong>Utiliser la Transparence</strong></td>
+<td>Que les blocs transparents révèlent ce qui est en dessous sur la carte</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
-<p>The default option for each setting below is marked with <strong>bold text.</strong></p>
+<h2 id="autres-parametres"><strong>Autres Paramètres</strong></h2>
+<p>L'option par défaut pour chaque paramètre ci-dessous est marquée en <strong>gras</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Reveal Shape</td>
-<td><ul><li>Square</li><li><strong>Circle</strong></li></ul></td>
-<td>Whether to reveal chunks in a circle or square - circle reveals show fewer chunks at once, and so perform better</td>
+<td>Forme de Révélation</td>
+<td><ul><li>Carré</li><li><strong>Cercle</strong></li></ul></td>
+<td>Que révéler les chunks dans un cercle ou un carré - les révélations en cercle montrent moins de chunks à la fois, et donc, offrent de meilleures performances</td>
 </tr>
 <tr>
-<td>Render Delay</td>
-<td>Range: 0 - 10 (in seconds, Default: <strong>2</strong>)</td>
-<td>How often JourneyMap should try to render the chunks around you - Higher values can result in better performance, but may result in chunks being missed when traveling at high speed</td>
+<td>Délai de Rendu</td>
+<td>Plage : 0 - 10 (en secondes, Par défaut : <strong>2</strong>)</td>
+<td>À quelle fréquence JourneyMap devrait essayer de rendre les chunks autour de vous - Des valeurs plus élevées peuvent entraîner une meilleure performance, mais peuvent manquer des chunks en se déplaçant à grande vitesse</td>
 </tr>
 <tr>
-<td>Cave Max Distance</td>
-<td>Range: 0 - 32 (in chunks, Default: <strong>0</strong>)</td>
-<td>The maximum distance within which to attempt to render the map while in a cave - if you set this higher than your render distance, then this will use that instead</td>
+<td>Distance Max des Grottes</td>
+<td>Plage : 0 - 32 (en chunks, Par défaut : <strong>0</strong>)</td>
+<td>La distance maximale à laquelle essayer de rendre la carte en étant dans une grotte - si vous réglez cela plus haut que votre distance de rendu, cela utilisera cela à la place</td>
 </tr>
 <tr>
-<td>Surface Max Distance</td>
-<td>Range: 0 - 32 (in chunks, default: <strong>0</strong>)</td>
-<td>The maximum distance within which to attempt to render the map while above ground -if you set this higher than your render distance, then this will use that instead</td>
+<td>Distance Max de la Surface</td>
+<td>Plage : 0 - 32 (en chunks, par défaut : <strong>0</strong>)</td>
+<td>La distance maximale à laquelle essayer de rendre la carte en étant au-dessus du sol - si vous réglez cela plus haut que votre distance de rendu, cela utilisera cela à la place</td>
 </tr>
 </tbody>
 </table>

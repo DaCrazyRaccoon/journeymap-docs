@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#translate-the-docs" class="md-skip">
+        <a href="#traduire-la-documentation" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1500,27 +1500,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-setup" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Setup
+      Configuration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-folder" class="md-nav__link">
+  <a href="#creer-un-nouveau-dossier" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a new folder
+      Créer un nouveau dossier
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finishing-steps" class="md-nav__link">
+  <a href="#etapes-finales" class="md-nav__link">
     <span class="md-ellipsis">
-      Finishing steps
+      Étapes finales
     </span>
   </a>
   
@@ -1589,27 +1589,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-setup" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Setup
+      Configuration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-folder" class="md-nav__link">
+  <a href="#creer-un-nouveau-dossier" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a new folder
+      Créer un nouveau dossier
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finishing-steps" class="md-nav__link">
+  <a href="#etapes-finales" class="md-nav__link">
     <span class="md-ellipsis">
-      Finishing steps
+      Étapes finales
     </span>
   </a>
   
@@ -1633,15 +1633,15 @@
   
 
 
-<h1 id="translate-the-docs"><strong>Translate the docs</strong></h1>
-<p>If you want to contribute towards JourneyMap, a good way to do that is to translate the docs and the mod. This can help people that do not speak or not know how to read English, be able to read the JourneyMap docs or play the JourneyMap mod in their own language.</p>
-<p>Instructions on how to translate the mod can be found <a href="../translate-mod/">here</a></p>
-<h2 id="getting-setup"><strong>Getting Setup</strong></h2>
-<p>To get started on translating the wiki, you will need to have a local environment ready for testing your translations. This can be done by following the steps shown in the <a href="https://github.com/TeamJM/journeymap-docs#installing">README</a>.</p>
-<p>You will have to make a few changes to the <code>mkdocs.yml</code> file in the config folder. This can be done by:</p>
+<h1 id="traduire-la-documentation"><strong>Traduire la documentation</strong></h1>
+<p>Si vous souhaitez contribuer à JourneyMap, une bonne façon de le faire est de traduire la documentation et le mod. Cela peut aider les personnes qui ne parlent pas ou qui ne savent pas lire l'anglais à pouvoir lire la documentation de JourneyMap ou à jouer au mod JourneyMap dans leur propre langue.</p>
+<p>Les instructions sur la manière de traduire le mod peuvent être trouvées <a href="../translate-mod/">ici</a>.</p>
+<h2 id="configuration"><strong>Configuration</strong></h2>
+<p>Pour commencer à traduire le wiki, vous devez préparer un environnement local pour tester vos traductions. Cela peut être fait en suivant les étapes indiquées dans le <a href="https://github.com/TeamJM/journeymap-docs#installing">README</a>.</p>
+<p>Vous devrez apporter quelques modifications au fichier <code>mkdocs.yml</code> dans le dossier de configuration. Cela peut être fait en suivant ces étapes :</p>
 <ol>
-<li>Opening the <code>mkdocs.yml</code> file in the config folder</li>
-<li>Scroll down until you see the variable name <code>languages</code> and input a new line like this:</li>
+<li>Ouvrez le fichier <code>mkdocs.yml</code> dans le dossier de configuration.</li>
+<li>Faites défiler jusqu'à voir le nom de la variable <code>languages</code> et ajoutez une nouvelle ligne comme suit :</li>
 </ol>
 <div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span class="w"> </span>     languages:
 <span class="w"> </span>        - locale: en
@@ -1654,67 +1654,69 @@
 <span class="gi">+          name: Français</span>
 <span class="gi">+          build: true</span>
 </code></pre></div>
-<p>3. You will also have to add translations to the navigation elements for French. To do this, please copy and paste the <code>nav_translations</code> section from the English to the French section. Here is an example:</p>
+<ol>
+<li>Vous devrez également ajouter des traductions aux éléments de navigation pour le français. Pour ce faire, veuillez copier et coller la section <code>nav_translations</code> de l'anglais vers la section française. Voici un exemple :</li>
+</ol>
 <div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span class="w"> </span>         - locale: fr
 <span class="w"> </span>           default: false
 <span class="w"> </span>           name: Français
 <span class="w"> </span>           build: true
 <span class="gi">+           nav_translations:</span>
-<span class="gi">+             Home: Home</span>
-<span class="gi">+             About: About</span>
-<span class="gi">+             Credits: Credits</span>
-<span class="gi">+             Licensing: Licensing</span>
+<span class="gi">+             Home: Accueil</span>
+<span class="gi">+             About: À propos</span>
+<span class="gi">+             Credits: Crédits</span>
+<span class="gi">+             Licensing: Licence</span>
 <span class="gi">+             Support: Support</span>
-<span class="gi">+             Client Docs: Client Docs</span>
-<span class="gi">+             Installing: Installing</span>
-<span class="gi">+             Basic Usage: Basic Usage</span>
-<span class="gi">+             Full-Screen Map: Full-Screen Map</span>
-<span class="gi">+             Settings: Settings</span>
-<span class="gi">+             Overview: Overview</span>
-<span class="gi">+             Grid: Grid</span>
-<span class="gi">+             Minimap: Minimap</span>
-<span class="gi">+             Minimap Position: Minimap Position</span>
-<span class="gi">+             Full-Screen Map: Full-Screen Map</span>
-<span class="gi">+             Webmap: Webmap</span>
-<span class="gi">+             Waypoint: Waypoint</span>
-<span class="gi">+             Waypoint Beacons: Waypoint Beacons</span>
-<span class="gi">+             Cartography: Cartography</span>
-<span class="gi">+             Advanced Options: Advanced Options</span>
-<span class="gi">+             Waypoints: Waypoints</span>
-<span class="gi">+             Server Docs: Server Docs</span>
-<span class="gi">+             Installing: Installing</span>
-<span class="gi">+             Basic Usage: Basic Usage</span>
-<span class="gi">+             Commands: Commands</span>
-<span class="gi">+             Waypoint: Waypoint</span>
-<span class="gi">+             Settings: Settings</span>
-<span class="gi">+             Overview: Overview</span>
-<span class="gi">+             Global Properties: Global Properties</span>
-<span class="gi">+             Default Dimension Properties: Default Dimension Properties</span>
+<span class="gi">+             Client Docs: Documentation Client</span>
+<span class="gi">+             Installing: Installation</span>
+<span class="gi">+             Basic Usage: Utilisation de Base</span>
+<span class="gi">+             Full-Screen Map: Carte Plein Écran</span>
+<span class="gi">+             Settings: Paramètres</span>
+<span class="gi">+             Overview: Aperçu</span>
+<span class="gi">+             Grid: Grille</span>
+<span class="gi">+             Minimap: Minicarte</span>
+<span class="gi">+             Minimap Position: Position de la Minicarte</span>
+<span class="gi">+             Full-Screen Map: Carte Plein Écran</span>
+<span class="gi">+             Webmap: Carte Web</span>
+<span class="gi">+             Waypoint: Point de Repère</span>
+<span class="gi">+             Waypoint Beacons: Balises de Points de Repère</span>
+<span class="gi">+             Cartography: Cartographie</span>
+<span class="gi">+             Advanced Options: Options Avancées</span>
+<span class="gi">+             Waypoints: Points de Repère</span>
+<span class="gi">+             Server Docs: Documentation Serveur</span>
+<span class="gi">+             Installing: Installation</span>
+<span class="gi">+             Basic Usage: Utilisation de Base</span>
+<span class="gi">+             Commands: Commandes</span>
+<span class="gi">+             Waypoint: Point de Repère</span>
+<span class="gi">+             Settings: Paramètres</span>
+<span class="gi">+             Overview: Aperçu</span>
+<span class="gi">+             Global Properties: Propriétés Globales</span>
+<span class="gi">+             Default Dimension Properties: Propriétés par Défaut des Dimensions</span>
 <span class="gi">+             Dimension - minecraft:overworld: Dimension - minecraft:overworld</span>
 <span class="gi">+             Dimension - minecraft:the_nether: Dimension - minecraft:the_nether</span>
 <span class="gi">+             Dimension - minecraft:the_end: Dimension - minecraft:the_end</span>
-<span class="gi">+             Multiplayer: Multiplayer</span>
-<span class="gi">+             Endpoints: Endpoints</span>
-<span class="gi">+             Waypoint: Waypoint</span>
-<span class="gi">+             Tools &amp; Customisation: Tools &amp; Customisation</span>
-<span class="gi">+             Custom Mob Icons: Custom Mob Icons</span>
-<span class="gi">+             Integrate your mod: Integrate your mod</span>
-<span class="gi">+             JourneyMap Tools: JourneyMap Tools</span>
-<span class="gi">+             Map a multiplayer server: Map a multiplayer server</span>
-<span class="gi">+             Topographic: Topographic</span>
-<span class="gi">+             UI Themes: UI Themes</span>
-<span class="gi">+             Contributing: Contributing</span>
-<span class="gi">+             Translate the mod: Translate the mod</span>
-<span class="gi">+             Translate the docs: Translate the docs</span>
-<span class="gi">+             Changelogs: Changelogs</span>
+<span class="gi">+             Multiplayer: Multijoueur</span>
+<span class="gi">+             Endpoints: Points de Terminaison</span>
+<span class="gi">+             Waypoint: Point de Repère</span>
+<span class="gi">+             Tools &amp; Customisation: Outils et Personnalisation</span>
+<span class="gi">+             Custom Mob Icons: Icônes de Mob Personnalisées</span>
+<span class="gi">+             Integrate your mod: Intégrer votre mod</span>
+<span class="gi">+             JourneyMap Tools: Outils JourneyMap</span>
+<span class="gi">+             Map a multiplayer server: Cartographier un serveur multijoueur</span>
+<span class="gi">+             Topographic: Topographique</span>
+<span class="gi">+             UI Themes: Thèmes de l&#39;Interface Utilisateur</span>
+<span class="gi">+             Contributing: Contribuer</span>
+<span class="gi">+             Translate the mod: Traduire le mod</span>
+<span class="gi">+             Translate the docs: Traduire la documentation</span>
+<span class="gi">+             Changelogs: Journaux de Modifications</span>
 </code></pre></div>
-<p>This codeblock includes English translations. In this case, you would need to translate the English words after the colon into French. I have left them English as an example.</p>
+<p>Ce bloc de code inclut des traductions anglaises. Dans ce cas, vous devrez traduire les mots anglais après le deux-points en français. Je les ai laissés en anglais à titre d'exemple.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The instructions above only apply if you are translating to French. Please apply these instructions to the relative language you are translating to.</p>
+<p class="admonition-title">Remarque</p>
+<p>Les instructions ci-dessus ne s'appliquent que si vous traduisez en français. Veuillez appliquer ces instructions à la langue relative dans laquelle vous traduisez.</p>
 </div>
-<h2 id="creating-a-new-folder"><strong>Creating a new folder</strong></h2>
-<p>Now that you have set yourself up, you can now start translating the actual docs. To start, you will need to create a new folder in the docs directory with your 2-letter <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> language code. Here is an example of how to do this if you are translating the docs to French:</p>
+<h2 id="creer-un-nouveau-dossier"><strong>Créer un nouveau dossier</strong></h2>
+<p>Maintenant que vous vous êtes configuré, vous pouvez commencer à traduire la documentation proprement dite. Pour commencer, vous devrez créer un nouveau dossier dans le répertoire des documents avec votre code de langue à 2 lettres <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a>. Voici un exemple de la façon de procéder si vous traduisez la documentation en français :</p>
 <div class="highlight"><pre><span></span><code>├─ docs/
 │    ├─ en/
 │    │   ├─ About/
@@ -1732,11 +1734,11 @@
 │        ├─ changelogs.md
 │        └─ index.md
 </code></pre></div>
-<p>An easy way to do this is to create a folder with your 2-letter <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> language code and copy and paste the contents from the en directory to your newly created folder in the docs directory.</p>
-<p>Once your folder with all the files have been created, you can start translating the docs to your language.</p>
-<h2 id="finishing-steps"><strong>Finishing steps</strong></h2>
-<p>You might have come here asking yourself, what do I do once I have finished translating? Well, the final step you would do is to PR your work to the main repo for us to review and merge if all of it looks great.</p>
-<p><strong>Thank you very much for your hard work!</strong></p>
+<p>Une manière simple de faire cela est de créer un dossier avec votre code de langue à 2 lettres <a href="https://en.wikipedia.org/wiki/ISO_639-1">ISO-639-1</a> et de copier-coller le contenu du répertoire en dans votre nouveau dossier créé dans le répertoire des documents.</p>
+<p>Une fois que votre dossier avec tous les fichiers a été créé, vous pouvez commencer à traduire la documentation dans votre langue.</p>
+<h2 id="etapes-finales"><strong>Étapes finales</strong></h2>
+<p>Vous vous demandez peut-être ce que vous devez faire une fois que vous avez terminé de traduire ? Eh bien, la dernière étape consiste à faire une PR de votre travail vers le dépôt principal afin que nous puissions le réviser et le fusionner si tout semble bon.</p>
+<p><strong>Merci beaucoup pour votre travail acharné !</strong></p>
 
 
 

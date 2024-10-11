@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoint-commands" class="md-skip">
+        <a href="#commandes-de-point-de-repere" class="md-skip">
           Aller au contenu
         </a>
       
@@ -951,6 +951,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Point de Repère
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -960,6 +971,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-un-point-de-repere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer un Point de Repère
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Créer un Point de Repère">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supprimer-un-point-de-repere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supprimer un Point de Repère
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-partir-de-journeymap-590" class="md-nav__link">
+    <span class="md-ellipsis">
+      À partir de JourneyMap 5.9.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1527,6 +1599,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-un-point-de-repere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer un Point de Repère
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Créer un Point de Repère">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supprimer-un-point-de-repere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supprimer un Point de Repère
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-partir-de-journeymap-590" class="md-nav__link">
+    <span class="md-ellipsis">
+      À partir de JourneyMap 5.9.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1543,35 +1665,35 @@
   
 
 
-<h1 id="waypoint-commands"><strong>Waypoint Commands</strong></h1>
-<p>Commands allows you to create and delete waypoints from the chat.</p>
-<p>Note: <u>It will not be ported to older versions</u></p>
+<h1 id="commandes-de-point-de-repere"><strong>Commandes de Point de Repère</strong></h1>
+<p>Les commandes permettent de créer et de supprimer des points de repère à partir du chat.</p>
+<p>Remarque : <u>Cette fonctionnalité ne sera pas portée sur les anciennes versions</u></p>
 <ul>
-<li>Command: waypoint</li>
-<li>Alias: wp</li>
+<li>Commande : waypoint</li>
+<li>Alias : wp</li>
 </ul>
-<p><strong>Create Waypoint</strong></p>
-<div class="highlight"><pre><span></span><code>fields in [] are optional -&gt; 
-[player] is the target player, if no player is specified, it will show an error.
-[announce] is whether the player has a notification that a waypoint is being created, if it is not specified, defaults to false it is created silently.
-- /waypoint create &quot;name&quot; dimension x y z color [player] [announce]
-- /waypoint delete &quot;name&quot; [player] [announce]
+<h2 id="creer-un-point-de-repere"><strong>Créer un Point de Repère</strong></h2>
+<div class="highlight"><pre><span></span><code>Les champs entre [] sont optionnels -&gt; 
+[player] est le joueur ciblé, si aucun joueur n&#39;est spécifié, une erreur sera affichée.
+[announce] indique si le joueur a une notification qu&#39;un point de repère est en cours de création, si ce n&#39;est pas spécifié, la valeur par défaut est false, il est créé silencieusement.
+- /waypoint create &quot;nom&quot; dimension x y z couleur [joueur] [annoncer]
+- /waypoint delete &quot;nom&quot; [joueur] [annoncer]
 </code></pre></div>
-<p><strong>Examples</strong></p>
+<h3 id="exemples"><strong>Exemples</strong></h3>
 <div class="highlight"><pre><span></span><code>-   /waypoint create &quot;Spawn&quot; minecraft:overworld 1 50 12 aqua
--   /waypoint create &quot;Home&quot; minecraft:overworld 1 50 12 aqua mysticdrew
--   /waypoint create &quot;Home&quot; minecraft:overworld 1 50 12 aqua true~~  currently bugged in v5.8.x
--   /waypoint create &quot;Home&quot; minecraft:overworld 1 50 12 aqua mysticdrew true
+-   /waypoint create &quot;Maison&quot; minecraft:overworld 1 50 12 aqua mysticdrew
+-   /waypoint create &quot;Maison&quot; minecraft:overworld 1 50 12 aqua true~~  actuellement bugué dans v5.8.x
+-   /waypoint create &quot;Maison&quot; minecraft:overworld 1 50 12 aqua mysticdrew true
 </code></pre></div>
-<p><strong>Delete Waypoint</strong></p>
-<p>Note: <u>Only deletes waypoints created by command</u></p>
-<div class="highlight"><pre><span></span><code>/waypoint delete &quot;WaypointName&quot;
-/waypoint delete &quot;WaypointName&quot; true
-/waypoint delete &quot;WaypointName&quot; mysticdrew
-/waypoint delete &quot;WaypointName&quot; mysticdrew true
+<h2 id="supprimer-un-point-de-repere"><strong>Supprimer un Point de Repère</strong></h2>
+<p>Remarque : <u>Supprime uniquement les points de repère créés par commande</u></p>
+<div class="highlight"><pre><span></span><code>/waypoint delete &quot;NomDuPoint&quot;
+/waypoint delete &quot;NomDuPoint&quot; true
+/waypoint delete &quot;NomDuPoint&quot; mysticdrew
+/waypoint delete &quot;NomDuPoint&quot; mysticdrew true
 </code></pre></div>
-<p><strong>As of JourneyMap 5.9.0</strong></p>
-<p>All waypoint commands require use of the player field. It takes a player or a list of players or <code>@a</code> for both create and delete.</p>
+<h2 id="a-partir-de-journeymap-590"><strong>À partir de JourneyMap 5.9.0</strong></h2>
+<p>Toutes les commandes de point de repère nécessitent l'utilisation du champ joueur. Il prend un joueur, une liste de joueurs ou <code>@a</code> pour les deux lors de la création et de la suppression.</p>
 
 
 

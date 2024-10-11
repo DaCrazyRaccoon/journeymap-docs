@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoint-settings" class="md-skip">
+        <a href="#parametres-des-points-de-repere" class="md-skip">
           Aller au contenu
         </a>
       
@@ -716,8 +716,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -746,8 +744,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -756,18 +752,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#parametres-des-points-de-repere" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Paramètres des Points de Repère
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#bascules" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Settings
+      Bascules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autres-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres Paramètres
     </span>
   </a>
   
@@ -1572,8 +1577,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1582,18 +1585,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#toggles" class="md-nav__link">
+  <a href="#parametres-des-points-de-repere" class="md-nav__link">
     <span class="md-ellipsis">
-      Toggles
+      Paramètres des Points de Repère
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-settings" class="md-nav__link">
+  <a href="#bascules" class="md-nav__link">
     <span class="md-ellipsis">
-      Other Settings
+      Bascules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autres-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autres Paramètres
     </span>
   </a>
   
@@ -1617,76 +1629,78 @@
   
 
 
-<h1 id="waypoint-settings"><strong>Waypoint Settings</strong></h1>
-<p>This category allows you to change some settings relating to how <a href="../../waypoints/">waypoints</a> behave and are displayed.
-Waypoints also have a number of individual settings - you can find out about those
-on <a href="../../waypoints/">the waypoints page.</a></p>
-<p><a class="glightbox" href="../../../../img/settings/client/waypoints.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Waypoint-Settings" class="center" src="../../../../img/settings/client/waypoints.png" /></a></p>
-<h2 id="toggles"><strong>Toggles</strong></h2>
-<p>The <strong>bold</strong> toggle settings below are enabled by default.</p>
+  <h1>Point de Repère</h1>
+
+<h2 id="parametres-des-points-de-repere"><strong>Paramètres des Points de Repère</strong></h2>
+<p>Cette catégorie vous permet de changer certains paramètres relatifs à la façon dont les <a href="../../waypoints/">points de repère</a> se comportent et sont affichés.
+Les points de repère ont également un certain nombre de paramètres individuels - vous pouvez en savoir plus
+sur <a href="../../waypoints/">la page des points de repère.</a></p>
+<p><a class="glightbox" href="../../../img/settings/client/waypoints.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Paramètres des Points de Repère" class="center" src="../../../img/settings/client/waypoints.png" /></a></p>
+<h2 id="bascules"><strong>Bascules</strong></h2>
+<p>Les paramètres de bascule <strong>en gras</strong> ci-dessous sont activés par défaut.</p>
 <table>
 <thead>
 <tr>
-<th>Toggle</th>
+<th>Bascule</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Enable Waypoint Manager</strong></td>
-<td>Enable the waypoint manager - you can disable this if you use another <br>mod to manage waypoints</td>
+<td><strong>Activer le Gestionnaire de Points de Repère</strong></td>
+<td>Activer le gestionnaire de points de repère - vous pouvez le désactiver si vous utilisez un autre <br>mod pour gérer les points de repère</td>
 </tr>
 <tr>
-<td><strong>Create Deathpoints</strong></td>
-<td>Whether death waypoints should be created when you die</td>
+<td><strong>Créer des Points de Repère de Mort</strong></td>
+<td>Que des points de repère de mort soient créés lorsque vous mourrez</td>
 </tr>
 <tr>
-<td>Disable Strikethrough text</td>
-<td>Disables the strike through of the waypoint text</td>
+<td>Désactiver le texte barré</td>
+<td>Désactive le barré du texte du point de repère</td>
 </tr>
 <tr>
-<td><strong>Display Death Waypoint Label <br>on map overlay</strong></td>
-<td>Whether to show the name for death waypoints on your minimap and <br>full-screen map</td>
+<td><strong>Afficher l'Étiquette du Point de Repère de Mort <br>sur la superposition de carte</strong></td>
+<td>Que le nom des points de repère de mort soit affiché sur votre minicarte et <br>carte en plein écran</td>
 </tr>
 <tr>
-<td><strong>Double click to create</strong></td>
-<td>Double clicking on the fullscreen map will create a waypoint at the location</td>
+<td><strong>Double clic pour créer</strong></td>
+<td>Un double clic sur la carte en plein écran créera un point de repère à l'emplacement</td>
 </tr>
 <tr>
-<td>Show Deviation</td>
-<td>Show the vector deviation between player and waypoint</td>
+<td>Montrer la Déviation</td>
+<td>Montrer la déviation vectorielle entre le joueur et le point de repère</td>
 </tr>
 <tr>
-<td>Waypoint Manager Open in Current Dimension</td>
-<td>Opens the waypoint manager in the current dimension</td>
+<td>Ouvrir le Gestionnaire de Points de Repère dans la Dimension Actuelle</td>
+<td>Ouvre le gestionnaire de points de repère dans la dimension actuelle</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-settings"><strong>Other Settings</strong></h2>
-<p>The default option for each setting below is marked with <strong>bold text.</strong></p>
+<h2 id="autres-parametres"><strong>Autres Paramètres</strong></h2>
+<p>L'option par défaut pour chaque paramètre ci-dessous est marquée en <strong>gras</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Custom Waypoint Teleport Command</td>
-<td>Text input: <strong>/tp {name} {x} {y} {z}</strong></td>
-<td>The teleport command that should be used when you teleport to a waypoint, using the following placeholders: <ul><li><strong>{name}</strong>: Your player name</li><li><strong>{dim}</strong>: The target dimension</li><li><strong>{x}</strong>: The waypoint's X coordinate</li><li><strong>{y}</strong>: The waypoint's Y coordinate</li><li><strong>{z}</strong>: The waypoint's Z coordinate</li></ul> This setting is ignored in single player or if JourneyMap is installed on a server; teleportation happens without a command in that case.</td>
+<td>Commande de Téléportation Personnalisée aux Points de Repère</td>
+<td>Entrée de texte : <strong>/tp {name} {x} {y} {z}</strong></td>
+<td>La commande de téléportation qui devrait être utilisée lorsque vous vous téléportez à un point de repère, en utilisant les espaces réservés suivants : <ul><li><strong>{name}</strong>: Votre nom de joueur</li><li><strong>{dim}</strong>: La dimension cible</li><li><strong>{x}</strong>: La coordonnée X du point de repère</li><li><strong>{y}</strong>: La coordonnée Y du point de repère</li><li><strong>{z}</strong>: La coordonnée Z du point de repère</li></ul> Ce paramètre est ignoré en solo ou si JourneyMap est installé sur un serveur ; la téléportation se fait sans commande dans ce cas.</td>
 </tr>
 <tr>
-<td>Death Date Format</td>
+<td>Format de la Date de Mort</td>
 <td><ul><li><strong>MM-dd-yyyy</strong></li><li>MM-dd-yy</li><li>dd-MM-yyyy</li><li>dd-MM-yy</li><li>yyyy-MM-dd</li><li>yy-MM-dd</li></ul></td>
-<td>The text format of the date of death, as shown in the death waypoint label <ul><li><strong>dd</strong>: Day</li><li><strong>MM</strong>: Month</li><li><strong>yy</strong>: Year (2 digits)</li><li><strong>yyyy</strong>: Year (4 digits)</li></ul></td>
+<td>Le format de texte de la date de mort, tel qu'affiché dans l'étiquette du point de repère de mort <ul><li><strong>dd</strong>: Jour</li><li><strong>MM</strong>: Mois</li><li><strong>yy</strong>: Année (2 chiffres)</li><li><strong>yyyy</strong>: Année (4 chiffres)</li></ul></td>
 </tr>
 <tr>
-<td>Death Time Format</td>
+<td>Format de l'Heure de Mort</td>
 <td><ul><li><strong>HH:mm:ss</strong></li><li>H:mm:ss</li><li>HH:mm</li><li>H:mm</li><li>hh:mm:ss a</li><li>h:mm:ss a</li><li>hh:mm:ss</li><li>h:mm:ss</li><li>h:mm a</li><li>h:mm a</li><li>hh:mm</li><li>h:mm</li></ul></td>
-<td>The text format of the time of death, as shown in the death waypoint label</td>
+<td>Le format de texte de l'heure de mort, tel qu'affiché dans l'étiquette du point de repère de mort</td>
 </tr>
 </tbody>
 </table>

@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#waypoints" class="md-skip">
+        <a href="#points-de-repere" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1242,11 +1242,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#exemples" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Exemples
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifiant-de-paquet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiant de Paquet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tampon-de-paquet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tampon de Paquet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecteur-de-paquet-code-du-client-de-journeymap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecteur de Paquet (code du client de journeymap)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-charge-utile-de-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de Charge Utile de Création
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-charge-utile-de-suppression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de Charge Utile de Suppression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemple de Charge Utile de Suppression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dimplementation-utilisant-craftbukkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple d'implémentation utilisant CraftBukkit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1573,11 +1639,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#exemples" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Exemples
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifiant-de-paquet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiant de Paquet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tampon-de-paquet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tampon de Paquet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecteur-de-paquet-code-du-client-de-journeymap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lecteur de Paquet (code du client de journeymap)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-charge-utile-de-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de Charge Utile de Création
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-de-charge-utile-de-suppression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de Charge Utile de Suppression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemple de Charge Utile de Suppression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dimplementation-utilisant-craftbukkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple d'implémentation utilisant CraftBukkit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1599,25 +1731,25 @@
   
 
 
-<h1 id="waypoints"><strong>Waypoints</strong></h1>
-<p>The External Waypoint Packet Listener is a feature that allows the server to send waypoints to the client. This is useful for server admins who want to provide waypoints to players without requiring an addon mod.</p>
-<h2 id="examples"><strong>Examples</strong></h2>
-<p>Below is an example of what the packet json looks like and what information the server sends to the client to process and interpret.</p>
-<p>Packet Identifier</p>
+<h1 id="points-de-repere"><strong>Points de Repère</strong></h1>
+<p>Le <strong>Listener de Paquet de Point de Repère Externe</strong> est une fonctionnalité qui permet au serveur d'envoyer des points de repère au client. Cela est utile pour les administrateurs de serveur qui souhaitent fournir des points de repère aux joueurs sans nécessiter un mod d'extension.</p>
+<h2 id="exemples"><strong>Exemples</strong></h2>
+<p>Voici un exemple de ce à quoi ressemble le JSON du paquet et quelles informations le serveur envoie au client pour traitement et interprétation.</p>
+<h3 id="identifiant-de-paquet">Identifiant de Paquet</h3>
 <div class="highlight"><pre><span></span><code>discriminator:0
 channel:journeymap:waypoint
 </code></pre></div>
-<p>Packet Buffer</p>
+<h3 id="tampon-de-paquet">Tampon de Paquet</h3>
 <div class="highlight"><pre><span></span><code>waypoint StringUtf  value -&gt; waypointjson.toString();
-action StringUtf  value-&gt; &quot;create&quot; or &quot;delete&quot;
-announce Boolean -&gt; value true or false  : Announce determines if the user is notified when a waypoint is created or deleted. 
+action StringUtf  value-&gt; &quot;create&quot; ou &quot;delete&quot;
+announce Boolean -&gt; value true ou false  : Annonce détermine si l&#39;utilisateur est notifié lors de la création ou de la suppression d&#39;un point de repère. 
 </code></pre></div>
-<p>Packet Reader (journeymap's client code)</p>
+<h3 id="lecteur-de-paquet-code-du-client-de-journeymap">Lecteur de Paquet (code du client de journeymap)</h3>
 <div class="highlight"><pre><span></span><code>this.waypoint = buf.readUtf();
 this.action = buf.readUtf();
 this.announce = buf.readBoolean();
 </code></pre></div>
-<p><strong>Example Create Payload</strong></p>
+<h2 id="exemple-de-charge-utile-de-creation"><strong>Exemple de Charge Utile de Création</strong></h2>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;home_-10,70,32&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;home&quot;</span><span class="p">,</span>
@@ -1637,84 +1769,83 @@ this.announce = buf.readBoolean();
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>id -&gt; &lt;code&gt;id = &quot;name + &quot;_&quot; + x + &quot;,&quot; + y + &quot;,&quot; + z&quot;&lt;/code&gt; this format is required.&lt;br&gt;
-name -&gt; waypoint name&lt;br&gt;
-icon -&gt; &lt;code&gt;journeymap:ui/img/waypoint-icon.png&lt;/code&gt; this is required&lt;br&gt;
-enable -&gt; required to be true&lt;br&gt;
-type -&gt; &lt;code&gt;Normal&lt;/code&gt;  or &lt;code&gt;Death&lt;/code&gt;&lt;br&gt;
-origin -&gt; &lt;code&gt;external&lt;/code&gt; or &lt;code&gt;external-force&lt;/code&gt; external-force cannot be disabled/hidden on the client&lt;br&gt;
-x -&gt; x coord&lt;br&gt;
-y -&gt; y coord&lt;br&gt;
-z -&gt; z coord&lt;br&gt;
-r -&gt; red value&lt;br&gt;
-g -&gt; green value&lt;br&gt;
-b -&gt; blue value&lt;br&gt;
-persistent -&gt; &lt;code&gt;true&lt;/code&gt; saves to disk, will load when the user restarts minecraft, or changes dimensions. &lt;code&gt;false&lt;/code&gt; is not saved to disk, is removed from memory when the user exists minecraft&lt;br&gt;
-dimensions -&gt; list of dimensions&lt;br&gt;
+<div class="highlight"><pre><span></span><code>id -&gt; &lt;code&gt;id = &quot;nom + &quot;_&quot; + x + &quot;,&quot; + y + &quot;,&quot; + z&quot;&lt;/code&gt; ce format est requis.&lt;br&gt;
+name -&gt; nom du point de repère&lt;br&gt;
+icon -&gt; &lt;code&gt;journeymap:ui/img/waypoint-icon.png&lt;/code&gt; ceci est requis&lt;br&gt;
+enable -&gt; requis d&#39;être true&lt;br&gt;
+type -&gt; &lt;code&gt;Normal&lt;/code&gt;  ou &lt;code&gt;Death&lt;/code&gt;&lt;br&gt;
+origin -&gt; &lt;code&gt;external&lt;/code&gt; ou &lt;code&gt;external-force&lt;/code&gt; external-force ne peut pas être désactivé/caché sur le client&lt;br&gt;
+x -&gt; coordonnée x&lt;br&gt;
+y -&gt; coordonnée y&lt;br&gt;
+z -&gt; coordonnée z&lt;br&gt;
+r -&gt; valeur rouge&lt;br&gt;
+g -&gt; valeur verte&lt;br&gt;
+b -&gt; valeur bleue&lt;br&gt;
+persistent -&gt; &lt;code&gt;true&lt;/code&gt; sauvegarde sur le disque, sera chargé lorsque l&#39;utilisateur redémarre Minecraft, ou change de dimensions. &lt;code&gt;false&lt;/code&gt; n&#39;est pas sauvegardé sur le disque, est supprimé de la mémoire lorsque l&#39;utilisateur quitte Minecraft&lt;br&gt;
+dimensions -&gt; liste des dimensions&lt;br&gt;
 </code></pre></div>
-<p><strong>Example Delete Payload</strong></p>
+<h2 id="exemple-de-charge-utile-de-suppression"><strong>Exemple de Charge Utile de Suppression</strong></h2>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>name -&gt; waypoint name is all that is required to delete the waypoint. 
-Example implementation using CraftBukkit</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createWaypoint</span><span class="p">(</span><span class="n">Player</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">IntVector3</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">WaypointType</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">ChatColor</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Color</span><span class="w"> </span><span class="n">rgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="na">getColor</span><span class="p">();</span>
-<span class="w">        </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonObject</span><span class="p">();</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;_&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getY</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getZ</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;icon&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;waypoint-normal.png&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;enable&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;type&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="na">type</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;origin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;external&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getX</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getZ</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getRed</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;g&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getGreen</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getBlue</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;persistent&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
+<p>Le nom du point de repère est tout ce qui est requis pour supprimer le point de repère. </p>
+<h3 id="exemple-dimplementation-utilisant-craftbukkit">Exemple d'implémentation utilisant CraftBukkit</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createWaypoint</span><span class="p">(</span><span class="n">Player</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">IntVector3</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">WaypointType</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">ChatColor</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Color</span><span class="w"> </span><span class="n">rgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="na">getColor</span><span class="p">();</span>
+<span class="w">    </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonObject</span><span class="p">();</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;_&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getX</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getY</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;,&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getZ</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;icon&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;waypoint-normal.png&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;enable&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;type&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="na">type</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;origin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;external&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;x&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getX</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getY</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="na">getZ</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getRed</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;g&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getGreen</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rgb</span><span class="p">.</span><span class="na">getBlue</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;persistent&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
 
-<span class="w">        </span><span class="n">JsonArray</span><span class="w"> </span><span class="n">dimensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonArray</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="w">        </span><span class="n">dimensions</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;minecraft:&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">player</span><span class="p">.</span><span class="na">getWorld</span><span class="p">().</span><span class="na">getName</span><span class="p">());</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;dimensions&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dimensions</span><span class="p">);</span>
+<span class="w">    </span><span class="n">JsonArray</span><span class="w"> </span><span class="n">dimensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonArray</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="n">dimensions</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;minecraft:&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">player</span><span class="p">.</span><span class="na">getWorld</span><span class="p">().</span><span class="na">getName</span><span class="p">());</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;dimensions&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dimensions</span><span class="p">);</span>
 
-<span class="w">        </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="p">(</span><span class="n">Unpooled</span><span class="p">.</span><span class="na">buffer</span><span class="p">());</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">writeByte</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Extra Byte for Forge</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// Payload</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">CREATE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Action</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Announce</span>
-<span class="w">        </span><span class="n">player</span><span class="p">.</span><span class="na">sendPacket</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PacketPlayOutCustomPayload</span><span class="p">(</span><span class="n">WAYPOINT_KEY</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="p">));</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="p">(</span><span class="n">Unpooled</span><span class="p">.</span><span class="na">buffer</span><span class="p">());</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">writeByte</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Octet supplémentaire pour Forge</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// Charge utile</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">CREATE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Action</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Annonce</span>
+<span class="w">    </span><span class="n">player</span><span class="p">.</span><span class="na">sendPacket</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PacketPlayOutCustomPayload</span><span class="p">(</span><span class="n">WAYPOINT_KEY</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">deleteWaypoint</span><span class="p">(</span><span class="n">Player</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonObject</span><span class="p">();</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
-<span class="w">        </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;origin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;external&quot;</span><span class="p">);</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">deleteWaypoint</span><span class="p">(</span><span class="n">Player</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonObject</span><span class="p">();</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="na">addProperty</span><span class="p">(</span><span class="s">&quot;origin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;external&quot;</span><span class="p">);</span>
 
-<span class="w">        </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="p">(</span><span class="n">Unpooled</span><span class="p">.</span><span class="na">buffer</span><span class="p">());</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">writeByte</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Extra Byte for Forge</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// Payload</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">DELETE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Action</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Announce</span>
-<span class="w">        </span><span class="n">player</span><span class="p">.</span><span class="na">sendPacket</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PacketPlayOutCustomPayload</span><span class="p">(</span><span class="n">WAYPOINT_KEY</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="p">));</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="p">(</span><span class="n">Unpooled</span><span class="p">.</span><span class="na">buffer</span><span class="p">());</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">writeByte</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Octet supplémentaire pour Forge</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// Charge utile</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">a</span><span class="p">(</span><span class="n">DELETE</span><span class="p">);</span><span class="w"> </span><span class="c1">// Action</span>
+<span class="w">    </span><span class="n">out</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Annonce</span>
+<span class="w">    </span><span class="n">player</span><span class="p">.</span><span class="na">sendPacket</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PacketPlayOutCustomPayload</span><span class="p">(</span><span class="n">WAYPOINT_KEY</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="p">));</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>If you have the PacketDataSerializer (PacketBuffer) deobfuscated it would most likely use buffer.writeString(...) rather than buffer.a(...)
-If you want to use a different buffer/write manually the internals of that method are something like:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="nf">writeString</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">byteLimit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<p>Si vous avez le <strong>PacketDataSerializer</strong> (PacketBuffer) désobfusqué, il utiliserait probablement <code>buffer.writeString(...)</code> plutôt que <code>buffer.a(...)</code>. Si vous souhaitez utiliser un tampon différent / écrire manuellement, les détails internes de cette méthode ressemblent à :</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="n">PacketDataSerializer</span><span class="w"> </span><span class="nf">writeString</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">byteLimit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">        </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">getBytes</span><span class="p">(</span><span class="n">StandardCharsets</span><span class="p">.</span><span class="na">UTF_8</span><span class="p">);</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">byteLimit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EncoderException</span><span class="p">(</span><span class="s">&quot;String too big (was &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bytes encoded, max &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">byteLimit</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">getBytes</span><span class="p">(</span><span class="n">StandardCharsets</span><span class="p">.</span><span class="na">UTF_8</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">byteLimit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EncoderException</span><span class="p">(</span><span class="s">&quot;String too big (was &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bytes encoded, max &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">byteLimit</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">writeVarInt</span><span class="p">(</span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">writeBytes</span><span class="p">(</span><span class="n">bytes</span><span class="p">);</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">writeVarInt</span><span class="p">(</span><span class="n">bytes</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">writeBytes</span><span class="p">(</span><span class="n">bytes</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 
 

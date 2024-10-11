@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#grid-settings" class="md-skip">
+        <a href="#parametres-de-la-grille" class="md-skip">
           Aller au contenu
         </a>
       
@@ -611,8 +611,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Grille
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -623,6 +632,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parametres-de-la-grille" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres de la Grille
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1524,8 +1559,23 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parametres-de-la-grille" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres de la Grille
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1543,22 +1593,24 @@
   
 
 
-<h1 id="grid-settings"><strong>Grid Settings</strong></h1>
-<p>Both minimap presets and the full-screen map may have a configurable grid overlay. You can customize this overlay by clicking on the Edit Grid… button below the settings in each respective category.</p>
-<p>You can also reach this from the full-screen map by holding the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key and clicking on the grid button at the top.</p>
-<p><a class="glightbox" href="../../../../img/settings/client/grid.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grid-Settings" class="center" src="../../../../img/settings/client/grid.png" /></a></p>
-<p>The grid outlines individual chunks on the map. Grid styles that include region lines will draw an extra grid with differently-coloured lines to outline world regions on the map.</p>
+  <h1>Grille</h1>
+
+<h2 id="parametres-de-la-grille"><strong>Paramètres de la Grille</strong></h2>
+<p>Tant les préréglages de la minicarte que la carte en plein écran peuvent avoir une superposition de grille configurable. Vous pouvez personnaliser cette superposition en cliquant sur le bouton <strong>Modifier la Grille...</strong> sous les paramètres dans chaque catégorie respective.</p>
+<p>Vous pouvez également accéder à cela depuis la carte en plein écran en maintenant la touche <span class="keys"><kbd class="key-shift">Shift</kbd></span> et en cliquant sur le bouton de grille en haut.</p>
+<p><a class="glightbox" href="../../../img/settings/client/grid.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Paramètres de la Grille" class="center" src="../../../img/settings/client/grid.png" /></a></p>
+<p>La grille délimite les chunks individuels sur la carte. Les styles de grille qui incluent des lignes de région dessineront une grille supplémentaire avec des lignes de couleurs différentes pour délimiter les régions du monde sur la carte.</p>
 <ul>
-<li>Select a colour for the grid lines by clicking on the colour wheel.</li>
-<li>Select the map type (day, night or caves) to edit on the left side.</li>
-<li>Click the <strong>Reset</strong> button to reset the current map type to the default grid settings.</li>
-<li>Click the <strong>Cancel</strong> button to discard your changes and close the grid editor.</li>
-<li>Click the <strong>Save</strong> button to save your changes and close the grid editor.</li>
+<li>Sélectionnez une couleur pour les lignes de la grille en cliquant sur la roue des couleurs.</li>
+<li>Sélectionnez le type de carte (jour, nuit ou grottes) à éditer sur le côté gauche.</li>
+<li>Cliquez sur le bouton <strong>Réinitialiser</strong> pour réinitialiser le type de carte actuel aux paramètres de grille par défaut.</li>
+<li>Cliquez sur le bouton <strong>Annuler</strong> pour ignorer vos modifications et fermer l'éditeur de grille.</li>
+<li>Cliquez sur le bouton <strong>Sauvegarder</strong> pour enregistrer vos modifications et fermer l'éditeur de grille.</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Paramètre</th>
 <th>Options</th>
 <th>Description</th>
 </tr>
@@ -1566,13 +1618,13 @@
 <tbody>
 <tr>
 <td>Style</td>
-<td><strong>Squares</strong>, SquaresWithRegion, GridRegion, Dots, Checkers</td>
-<td>Change the type of grid overlaid on the map</td>
+<td><strong>Carrés</strong>, CarrésAvecRégion, GrilleRégion, Points, Damiers</td>
+<td>Change le type de grille superposée sur la carte</td>
 </tr>
 <tr>
-<td>Opacity</td>
-<td>Percentage: 0 - 100 <br><strong>Default is 50</strong></td>
-<td>How opaque the grid should be drawn</td>
+<td>Opacité</td>
+<td>Pourcentage : 0 - 100 <br><strong>Par défaut 50</strong></td>
+<td>À quel point la grille doit être dessinée de manière opaque</td>
 </tr>
 </tbody>
 </table>
